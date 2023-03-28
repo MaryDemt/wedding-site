@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <style>
+        body {
+            all: initial;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height:100vh;
+            background-image: url('./images/michael-krahn-eGD69I3ODC4-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .title {
+            color: white;
+            font-size: 40px;
+            margin: auto;
+            text-shadow: 2px 2px 2px black;
+            text-align: center;
+            font-family: "Pacifico", sans-serif;
+            width: 100vw;
+            margin-top: 100px;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .card {
+            background-color: antiquewhite;
+            border-radius: 5px;
+            font-family: "Pacifico", sans-serif;
+            margin: 20px 2vw 50px;
+            height: 300px;
+            padding: 10px 3vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Рады пригласить Вас разделить с нами <br/> наш самый счастливый день!</h1>
+        <section class="card-container">
+            <article class="card">
+                <h2 class="card__title">Время сбора гостей</h2>
+                <p>Автобус из г.Тамбов - 14.30</p>
+                <p>Автобус из г.Рассказово - 15.00</p>
+            </article>
+            <article class="card">
+                <h2 class="card__title">Контакты организаторов</h2>
+                <p>Анна 8-910-999-99-99</p>
+            </article>
+            <article class="card">
+                <h2 class="card__title">Схема проезда</h2>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.23868036703!2d41.76473378437107!3d52.675907735371595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41393b177547b393%3A0x9e864f0322ce2a1b!2z0KDQsNGB0YHQutCw0LfQvtCy0L4!5e1!3m2!1sru!2sru!4v1674043726405!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
+        
+    </main>
+</body>
+</html>
