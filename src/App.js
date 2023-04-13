@@ -9,6 +9,12 @@ function App() {
         <p className='header__subtitle'>27.08.2023</p>
       </header>
       <section className='section'>
+        <h2 className='section__title'>Дорогие наши друзья и родные!</h2>
+        <p className='article__info'>Спешим вам сообщить важную новость!</p>
+        <h2 className='section__title'>Мы женимся!</h2>
+        <p className='article__info'>И мы очень хотим разделить этот счастливый день с вами!</p>
+      </section>
+      <section className='section section_countdown'>
         <h2 className='section__title'>Обратный отсчет</h2>
         <FlipCountdown
         theme='light'

@@ -173,6 +173,10 @@ label {
   background-position: center;
 }
 
+.section_countdown {
+  background-color:#e6f2e4;;
+}
+
 .icon {
   width: 50px;
   height: 50px;
@@ -206,4 +210,21 @@ label {
 
 .section__map {
   width: 100%;
+}
+.flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .card__top {
+  color: bisque !important;
+  background-color: white !important;
+}
+
+.flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .card__bottom {
+  color: bisque !important;
+  background-color: white !important;
+}
+
+.flip-countdown *, .flip-countdown *:before, .flip-countdown *:after {
+  color: bisque !important;
+}
+
+.flip-countdown-title {
+  color: rgb(16 33 7 / 89%) !important;
 }
