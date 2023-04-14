@@ -98,7 +98,7 @@ label {
 
 .App {
   font-family: 'Comfortaa', cursive;
-  color:rgb(16 33 7 / 89%);
+  color:#454660;
 }
 
 .header {
@@ -111,7 +111,7 @@ label {
 
 .header::before {
   background-image: url('../public/header_background.jpg');
-  opacity: 0.7;
+  opacity: 0.55;
   content: '';
   width: 100%;
   height: 100%;
@@ -125,14 +125,14 @@ label {
   font-size: 5.5em;
   margin: 70px auto 0px;
   font-family: 'Caveat', cursive;
-  color: rgb(87 11 96 / 89%);
+  color: #454660;
   
 }
 
 .header__subtitle {
   font-size: 3em;
   margin: auto;
-  color: rgb(87 11 96 / 89%);
+  color: #454660;
   font-family: 'Caveat', cursive;
 }
 
@@ -141,8 +141,7 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(231 185 160);
-  color: black;
+  background-color: rgb(225 156 143 / 63%);
   text-align: center;
 }
 
@@ -181,7 +180,7 @@ label {
 .icon {
   width: 50px;
   height: 50px;
-  fill: bisque;
+  fill: rgb(225 156 143 / 63%);
 }
 
 .article {
@@ -213,19 +212,19 @@ label {
   width: 100%;
 }
 .flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .card__top {
-  color: bisque !important;
+  color: rgb(225 156 143 / 63%) !important;
   background-color: white !important;
 }
 
 .flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .card__bottom {
-  color: bisque !important;
+  color: rgb(225 156 143 / 63%) !important;
   background-color: white !important;
 }
 
-.flip-countdown *, .flip-countdown *:before, .flip-countdown *:after {
-  color: bisque !important;
+.flip-countdown *:before, .flip-countdown *:after {
+  color: rgb(225 156 143 / 63%) !important;
 }
 
-.flip-countdown-title {
-  color: rgb(16 33 7 / 89%) !important;
+.flip-countdown .flip-countdown-piece .flip-countdown-title {
+  color: #454660 !important;
 }
