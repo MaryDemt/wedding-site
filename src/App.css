@@ -122,17 +122,17 @@ label {
 }
 
 .header__title {
-  font-size: 4em;
-  margin: auto;
+  font-size: 5.5em;
+  margin: 70px auto 0px;
   font-family: 'Caveat', cursive;
-  color: rgb(16 33 7 / 89%);
+  color: rgb(87 11 96 / 89%);
   
 }
 
 .header__subtitle {
-  font-size: 2em;
+  font-size: 3em;
   margin: auto;
-  color: rgb(16 33 7 / 89%);
+  color: rgb(87 11 96 / 89%);
   font-family: 'Caveat', cursive;
 }
 
@@ -141,7 +141,8 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: linen;
+  background-color: rgb(231 185 160);
+  color: black;
   text-align: center;
 }
 
