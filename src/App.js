@@ -70,6 +70,15 @@ console.log()
           </div>
         </div>
       </section>
+      <section className='section section_countdown'>
+        <form action="https://send.pageclip.co/SVAMWXvgsdyWetCTT0IK2i6LinepASg9" className="pageclip-form" method="post">
+          <input type="name" name="name" />
+          <input type="email" name="email" />
+          <button type="submit" className="pageclip-form__submit">
+            <span>Send</span>
+          </button>
+        </form>
+      </section>
       <section className='section'>
         <h2 className='section__title'>Контакты</h2>
         <p className='article__info'>Координаторы: <span className='article__content'>+7-920-239-07-46</span></p>
