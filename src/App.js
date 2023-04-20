@@ -26,7 +26,6 @@ function App() {
     }
   },[])
 
-console.log()
   return (
     <div className="App">
       <header className='header'>
@@ -34,14 +33,21 @@ console.log()
         <p className='header__subtitle'>27.08.2023</p>
       </header>
       <section className='section'>
-        <h2 className='section__title section__title_animation'>С большой радостью приглашаем вас на нашу свадьбу!</h2>
-        <p className='article__info article__info_animation'>Мы будем очень рады видеть вас на своей свадьбе <br/> и надеемся, что этот день станет для нас, а также для вас, <br/> незабываемым праздником счастья и любви.</p>
+        <h2 className='section__title section__title_animation'>Приглашаем вас на нашу свадьбу!</h2>
+        <p className='article__info article__info_animation'>Мы будем очень рады, если вы проведете вместе с нами этот особенный день.</p>
       </section>
       <section className='section section_countdown'>
         <h2 className='section__title'>Обратный отсчет</h2>
+        <h3 className='article__title'>До самого счастливого дня осталось:</h3>
         <FlipCountdown
         theme='light'
         endAt={'2023-08-27 15:00:00'}
+        hideYear
+        monthTitle='Месяцa'
+        dayTitle='Дней'
+        hourTitle='Часов'
+        minuteTitle='Минут'
+        secondTitle='Секунд'
       />
       </section>
       <section id="anim" className='section section_bg'>
@@ -71,15 +77,6 @@ console.log()
         </div>
       </section>
       <section className='section section_countdown'>
-        <form action="https://send.pageclip.co/SVAMWXvgsdyWetCTT0IK2i6LinepASg9" className="pageclip-form" method="post">
-          <input type="name" name="name" />
-          <input type="email" name="email" />
-          <button type="submit" className="pageclip-form__submit">
-            <span>Send</span>
-          </button>
-        </form>
-      </section>
-      <section className='section'>
         <h2 className='section__title'>Контакты</h2>
         <p className='article__info'>Координаторы: <span className='article__content'>+7-920-239-07-46</span></p>
         <p className='article__info'><span className='article__content'>+7-900-495-27-79</span></p>
