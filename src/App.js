@@ -2,6 +2,17 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import FlipCountdown from '@rumess/react-flip-countdown';
 
+const durationUnitGenerator = (it, textFormName) => {
+  const text_forms = textFormName==='day'?['День','Дня','Дней']:textFormName==='month'?['Месяц','Месяца','Месяцев']:textFormName==='hour'?['Час','Часа','Часов']:
+  textFormName==='minute'?['Минута','Минуты','Минут']:['Секунда','Секунды','Секунд']
+  const n = Math.abs(it) % 100; 
+  const n1 = n % 10;
+  if (n > 10 && n < 20) { return text_forms[2]; }
+  if (n1 > 1 && n1 < 5) { return text_forms[1]; }
+  if (n1 === 1) { return text_forms[0]; }
+  return text_forms[2];
+}
+
 function App() {
   const [visibleBlock, setVisibleBlock] = useState('');
 
@@ -43,11 +54,11 @@ function App() {
         theme='light'
         endAt={'2023-08-27 15:00:00'}
         hideYear
-        monthTitle='Месяцa'
-        dayTitle='Дней'
-        hourTitle='Часов'
-        minuteTitle='Минут'
-        secondTitle='Секунд'
+        monthTitle={durationUnitGenerator(Math.floor((new Date('2023-08-27 15:00:00')- new Date()) / (1000 * 60 * 60 * 24 * 30) % 12), 'month')}
+        dayTitle={durationUnitGenerator(Math.floor((new Date('2023-08-27 15:00:00')- new Date()) / (1000 * 60 * 60 * 24) % 30.5), 'day')}
+        hourTitle={durationUnitGenerator(Math.floor((new Date('2023-08-27 15:00:00')- new Date()) / (1000 * 60 * 60) % 24), 'hour')}
+        minuteTitle={durationUnitGenerator(Math.floor((new Date('2023-08-27 15:00:00')- new Date()) / (1000 * 60) % 60), 'minute')}
+        secondTitle={durationUnitGenerator(Math.floor((new Date('2023-08-27 15:00:00')- new Date()) / 1000 % 60), 'second')}
       />
       </section>
       <section id="anim" className='section section_bg'>
